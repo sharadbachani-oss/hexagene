@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>HRS Sensitive Health Data Order — Completion Guide</title>
+<style>
+  @page { size: A4; margin: 16mm 15mm 16mm 15mm; }
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; color: #1a1a1a; font-size: 10.5px; line-height: 1.5; }
+  h1 { font-size: 20px; margin: 0 0 2px; color: #0b3d66; }
+  .sub { color: #555; font-size: 10px; margin: 0 0 14px; }
+  h2 { font-size: 13px; color: #0b3d66; border-bottom: 2px solid #cfe0ee; padding-bottom: 3px; margin: 18px 0 8px; }
+  h3 { font-size: 11px; margin: 12px 0 4px; color: #14497a; }
+  table { width: 100%; border-collapse: collapse; margin: 6px 0 10px; }
+  th, td { border: 1px solid #c9d4dd; padding: 5px 7px; text-align: left; vertical-align: top; }
+  th { background: #eef4f9; font-weight: 600; }
+  td.tick { text-align: center; font-weight: 700; color: #1a7a34; white-space: nowrap; }
+  .tier-high { color: #1a7a34; font-weight: 700; }
+  .tier-medium { color: #b9770e; font-weight: 700; }
+  .tier-low { color: #9aa0a6; font-weight: 700; }
+  .field { font-family: "SFMono-Regular", Consolas, monospace; background: #f3f6f9; padding: 1px 5px; border-radius: 3px; }
+  .callout { border-left: 4px solid #0b78c2; background: #f0f7fc; padding: 8px 11px; margin: 10px 0; border-radius: 0 4px 4px 0; }
+  .warn { border-left: 4px solid #d98300; background: #fdf6ec; padding: 8px 11px; margin: 10px 0; border-radius: 0 4px 4px 0; }
+  .good { border-left: 4px solid #1a7a34; background: #eef8f0; padding: 8px 11px; margin: 10px 0; border-radius: 0 4px 4px 0; }
+  ol, ul { margin: 4px 0 8px; padding-left: 20px; }
+  li { margin: 2px 0; }
+  code { font-family: "SFMono-Regular", Consolas, monospace; font-size: 9.6px; }
+  .small { font-size: 9px; color: #666; }
+  .nowrap { white-space: nowrap; }
+  a { color: #0b5fa5; text-decoration: none; }
+</style>
+</head>
+<body>
+
+<h1>HRS Sensitive Health Data Order Form — Completion Guide</h1>
+<p class="sub">Prepared for <strong>Suhail Bachani</strong> · Merlin Digital (HexaGene project) · 29 June 2026<br>
+Form: hrs.isr.umich.edu → Data Products → Downloads → Sensitive Health Data → Sensitive Health Data Order Form</p>
+
+<div class="callout">
+<strong>The 3 things this form needs from you:</strong>
+<ol style="margin-bottom:0">
+<li><strong>User details</strong> — pre-filled from your account (verify the Receiving Entity, see below).</li>
+<li><strong>An attached PDF</strong> — a completed &amp; signed <em>Sensitive Data Access Use Agreement</em> (&lt; 2 MB, PDF only). <em>This is the only blocker.</em></li>
+<li><strong>Ticked datasets</strong> — see the checklist on page 2.</li>
+</ol>
+</div>
+
+<h2>1 · User Details — what to enter</h2>
+<table>
+<tr><th style="width:26%">Field</th><th style="width:34%">Enter</th><th>Note</th></tr>
+<tr><td>First Name</td><td><span class="field">Suhail</span></td><td>Matches your HRS account.</td></tr>
+<tr><td>Last Name</td><td><span class="field">Bachani</span></td><td>—</td></tr>
+<tr><td>Email Address</td><td><span class="field">sharad.bachani@merlin-me.com</span></td><td>Your registered login.</td></tr>
+<tr><td>Receiving Entity<br>(Institution/Organization)</td><td><span class="field">Merlin Digital</span> <span class="small">(or your exact legal entity name)</span></td><td><strong>You currently have "merln ls" — that looks like a typo.</strong> Use the <em>same</em> entity name that appears on your HRS account and on the signed agreement, so all three match.</td></tr>
+</table>
+<p class="small">If name/email are wrong, edit your HRS profile <em>before</em> submitting — this form can't request data for other people, and the requester must be the account holder.</p>
+
+<h2>2 · The required attachment — Sensitive Data Access Use Agreement</h2>
+<div class="warn">
+I could not retrieve this template for you — this environment's network policy blocks <code>hrs.isr.umich.edu</code>. But <strong>you can download it directly from the form</strong> (you're already logged in on your own PC).
+</div>
+<ol>
+<li>On the order form, click <strong>"More information"</strong> next to <em>Attach PDF</em> (official template: <code>hrs.isr.umich.edu/sites/default/files/HRS-Sensitive-Data-Access-Use-Agreement.pdf</code>).</li>
+<li>Open it and complete the applicant fields — typically: <strong>name, title/role, institution/organization, address, email, the datasets requested, and your signature + date</strong>. Use the same name/entity as in Section 1.</li>
+<li>It is a self-signed researcher agreement (no separate institutional signing official is required for this Sensitive Health Data tier — unlike the dbGaP genotype track).</li>
+<li>Save the signed file as a <strong>PDF under 2 MB</strong> and attach it in the <em>Attach PDF</em> field.</li>
+</ol>
+<p class="small">Tip: if your PDF tool produces a file over 2 MB, "print to PDF" again at lower quality or flatten it.</p>
+
+<h2>3 · Requested Datasets — tick ALL (your stated goal: maximum coverage)</h2>
+<p>Every dataset on the form, with a defensible one-line justification tied to the HexaGene validation program. Tier = how directly it ties to a variant-pathogenicity / aging-genomics study (all are reasonable to request; tiers just tell you which are strongest if you're ever asked to trim).</p>
+<table>
+<tr><th class="nowrap">Tick</th><th style="width:30%">Dataset</th><th class="nowrap">Tier</th><th>One-line justification to use</th></tr>
+<tr><td class="tick">☑</td><td>Polygenic Score Data (PGS)</td><td class="tier-high">High</td><td>Benchmark/triangulate HexaGene-derived variant burden against established genetic risk scores.</td></tr>
+<tr><td class="tick">☑</td><td>APOE &amp; Serotonin Transporter Alleles</td><td class="tier-high">High</td><td>Directly genotyped loci to anchor variant-scoring and dementia-genetics validation.</td></tr>
+<tr><td class="tick">☑</td><td>HRS Epigenetic Clocks</td><td class="tier-high">High</td><td>DNA-methylation biological-age phenotypes to test genotype–phenotype associations.</td></tr>
+<tr><td class="tick">☑</td><td>Pace of Aging in HRS (HRSPoA)</td><td class="tier-high">High</td><td>Rate-of-aging phenotype as an outcome for genetic-score association testing.</td></tr>
+<tr><td class="tick">☑</td><td>2008 Telomere Data</td><td class="tier-high">High</td><td>Cellular-aging biomarker to correlate with variant-derived measures.</td></tr>
+<tr><td class="tick">☑</td><td>Venous Blood Study (VBS)</td><td class="tier-high">High</td><td>Rich molecular phenotypes (lipids, inflammation, metabolic) for genotype–phenotype validation.</td></tr>
+<tr><td class="tick">☑</td><td>Biomarker Data</td><td class="tier-high">High</td><td>Blood-based molecular phenotypes for variant-association validation (already granted — keep ticked for continuity).</td></tr>
+<tr><td class="tick">☑</td><td>Harmonized Cognitive Assessment Protocol (HCAP)</td><td class="tier-medium">Medium</td><td>Deep cognitive phenotyping as an outcome for variant-score association (e.g. AD-related loci).</td></tr>
+<tr><td class="tick">☑</td><td>The Aging, Demographics, and Memory Study (ADAMS)</td><td class="tier-medium">Medium</td><td>Clinically adjudicated dementia outcomes for genotype–phenotype validation.</td></tr>
+<tr><td class="tick">☑</td><td>2003 Diabetes Study</td><td class="tier-medium">Medium</td><td>Metabolic-disease outcome phenotype for variant-score validation.</td></tr>
+<tr><td class="tick">☑</td><td>2019 Health Survey</td><td class="tier-medium">Medium</td><td>Health-status outcomes/covariates for phenotype association models.</td></tr>
+<tr><td class="tick">☑</td><td>Prescription Drug Study (PDS) &amp; Health and Well-Being (HWB)</td><td class="tier-low">Low</td><td>Medication-use and psychosocial covariates for outcome adjustment.</td></tr>
+<tr><td class="tick">☑</td><td>HRS 2018 Core Module 4: Cannabis</td><td class="tier-low">Low</td><td>Behavioral/exposure covariate for outcome models.</td></tr>
+<tr><td class="tick">☑</td><td>HRS 2020 Core Module 10: Substance Use Problems</td><td class="tier-low">Low</td><td>Behavioral covariate for outcome adjustment.</td></tr>
+</table>
+<p class="small"><strong>Honest note:</strong> requesting all 14 is fine, but the "Low" rows are the ones least obviously tied to a genetics project. If HRS ever queries the request, lead with the High-tier genetic/aging datasets; the Low rows can be dropped without affecting the core work.</p>
+
+<h2>4 · Reusable research-use justification</h2>
+<p>Paste a tightened version of this into the agreement's purpose field (and keep it consistent with anything you've told HRS before):</p>
+<div class="callout" style="font-style:italic">
+"HexaGene is a deterministic, sequence-intrinsic biophysical score that predicts missense-variant pathogenicity from local DNA thermodynamic and mechanical properties, validated against ClinVar/REVEL using conventional statistics. We will use HRS molecular, biomarker, aging, and health-outcome measures as independent reference phenotypes to validate and calibrate HexaGene-derived variant measures in a deeply phenotyped older-adult cohort. Data will be stored securely, restricted to authorized project personnel, never redistributed, and never used to re-identify or contact participants, in accordance with HRS terms."
+</div>
+
+<h2>5 · AI / LLM Use Policy — you comply (this is in your favor)</h2>
+<div class="good">
+HRS's Conditions of Use (updated 02/2026) prohibit using <strong>LLMs and other AI tools</strong> to manage, process, or analyze HRS data. <strong>HexaGene is not affected:</strong> it is a <em>deterministic, fixed-weight biophysical formula</em> validated with <em>classical statistics</em> (t-tests, Pearson correlation, ROC-AUC). There is no machine-learning model, neural network, or LLM in the scoring or analysis pipeline — exactly the conventional statistical analysis the policy permits.
+</div>
+<div class="warn">
+<strong>One tooling caveat (not about your method):</strong> do not run the actual downloaded HRS data through any LLM/AI assistant for analysis — that would breach the policy regardless of HexaGene. Keep analysis inside your scipy/HexaGene pipeline. (Using an assistant to fill out <em>application forms</em> is fine — that isn't processing HRS data.)
+</div>
+
+<h2>6 · Before you click Submit — checklist</h2>
+<ul>
+<li>☐ Receiving Entity corrected and consistent across form + agreement + account.</li>
+<li>☐ Signed Sensitive Data Access Use Agreement attached (PDF, &lt; 2 MB).</li>
+<li>☐ All 14 datasets ticked (or your chosen subset).</li>
+<li>☐ No passwords or credentials anywhere in the request — request only.</li>
+<li>☐ Submitted under the account holder's name (Suhail Bachani).</li>
+</ul>
+<p class="small">Questions/follow-up: hrsdatareq@umich.edu (requests) · hrsquestions@umich.edu (general). Typical turnaround for Sensitive Health Data: days to ~2 weeks. As a non-US, for-profit requester, expect possible follow-up questions about purpose and data security — the Section 4 statement covers both.</p>
+
+</body>
+</html>
